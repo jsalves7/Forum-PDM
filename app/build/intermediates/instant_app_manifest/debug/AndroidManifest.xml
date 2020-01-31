@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pt.uac.qa"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="pt.uac.qa.QAApp"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="pt.uac.qa.ui.ViewAnswerActivity" />
+
+        <service
+            android:name="pt.uac.qa.services.AnswerService"
+            android:exported="false" />
+
+        <activity android:name="pt.uac.qa.ui.EditAnswerActivity" />
+        <activity
+            android:name="pt.uac.qa.ui.ViewQuestionActivity"
+            android:parentActivityName="pt.uac.qa.MainActivity" />
+
+        <service
+            android:name="pt.uac.qa.services.QuestionService"
+            android:exported="false" />
+
+        <activity
+            android:name="pt.uac.qa.LoginActivity"
+            android:label="@string/title_activity_login" />
+
+        <meta-data
+            android:name="base_url"
+            android:value="https://forum-daf.fsilva.info" />
+        <meta-data
+            android:name="client_id"
+            android:value="dam-2019-2020" />
+        <meta-data
+            android:name="client_secret"
+            android:value="ec53199f58dcecd9b7a6d930d1166040" />
+
+        <activity
+            android:name="pt.uac.qa.SplashActivity"
+            android:theme="@style/AppTheme.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="pt.uac.qa.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="pt.uac.qa.ui.EditQuestionActivity"
+            android:parentActivityName="pt.uac.qa.MainActivity" />
+
+        <service
+            android:name="pt.uac.qa.services.AccessTokenService"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="pt.uac.qa.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

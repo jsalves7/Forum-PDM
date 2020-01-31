@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/list_item_selector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/questionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question title"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Small"
+        android:id="@+id/questionAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="#aaa"
+        android:text="by Question author on date"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

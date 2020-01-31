@@ -1,0 +1,146 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="pt.uac.qa"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:6:5-67
+11-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:6:22-64
+12
+13    <application
+13-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:8:5-68:19
+14        android:name="pt.uac.qa.QAApp"
+14-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:9:9-30
+15        android:allowBackup="true"
+15-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:10:9-35
+16        android:allowClearUserData="true"
+16-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:11:9-42
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.1.0] /home/joshua/.gradle/caches/transforms-2/files-2.1/e9dab9c67c1ee3668e0bbf86c6d8cbd8/core-1.1.0/AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:12:9-43
+20        android:label="@string/app_name"
+20-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:13:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:14:9-54
+22        android:supportsRtl="true"
+22-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:15:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme"
+24-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:16:9-40
+25        android:usesCleartextTraffic="true" >
+25-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:17:9-44
+26        <activity android:name="pt.uac.qa.ui.ViewAnswerActivity" />
+26-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:19:9-68
+26-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:19:19-56
+27
+28        <service
+28-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:21:9-23:40
+29            android:name="pt.uac.qa.services.AnswerService"
+29-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:22:13-51
+30            android:exported="false" />
+30-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:23:13-37
+31
+32        <activity android:name="pt.uac.qa.ui.EditAnswerActivity" />
+32-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:25:9-59
+32-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:25:19-56
+33        <activity
+33-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:26:9-28:58
+34            android:name="pt.uac.qa.ui.ViewQuestionActivity"
+34-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:27:13-52
+35            android:parentActivityName="pt.uac.qa.MainActivity" />
+35-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:28:13-55
+36
+37        <service
+37-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:30:9-32:40
+38            android:name="pt.uac.qa.services.QuestionService"
+38-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:31:13-53
+39            android:exported="false" />
+39-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:32:13-37
+40
+41        <activity
+41-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:34:9-36:60
+42            android:name="pt.uac.qa.LoginActivity"
+42-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:35:13-42
+43            android:label="@string/title_activity_login" />
+43-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:36:13-57
+44
+45        <meta-data
+45-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:38:9-40:61
+46            android:name="base_url"
+46-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:39:13-36
+47            android:value="https://forum-daf.fsilva.info" />
+47-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:40:13-58
+48        <meta-data
+48-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:41:9-43:45
+49            android:name="client_id"
+49-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:42:13-37
+50            android:value="dam-2019-2020" />
+50-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:43:13-42
+51        <meta-data
+51-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:44:9-46:64
+52            android:name="client_secret"
+52-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:45:13-41
+53            android:value="ec53199f58dcecd9b7a6d930d1166040" />
+53-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:46:13-61
+54
+55        <activity
+55-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:48:9-56:20
+56            android:name="pt.uac.qa.SplashActivity"
+56-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:49:13-43
+57            android:theme="@style/AppTheme.SplashScreen" >
+57-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:50:13-57
+58            <intent-filter>
+58-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:51:13-55:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:52:17-69
+59-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:52:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:54:17-77
+61-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:54:27-74
+62            </intent-filter>
+63        </activity>
+64        <activity
+64-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:57:9-60:59
+65            android:name="pt.uac.qa.MainActivity"
+65-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:58:13-41
+66            android:label="@string/app_name"
+66-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:59:13-45
+67            android:theme="@style/AppTheme.NoActionBar" />
+67-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:60:13-56
+68        <activity
+68-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:61:9-63:58
+69            android:name="pt.uac.qa.ui.EditQuestionActivity"
+69-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:62:13-52
+70            android:parentActivityName="pt.uac.qa.MainActivity" />
+70-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:63:13-55
+71
+72        <service
+72-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:65:9-67:40
+73            android:name="pt.uac.qa.services.AccessTokenService"
+73-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:66:13-56
+74            android:exported="false" />
+74-->/home/joshua/android_studio_projects/QAA/app/src/main/AndroidManifest.xml:67:13-37
+75
+76        <provider
+76-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/joshua/.gradle/caches/transforms-2/files-2.1/3c03e0805bdfd6180afbf0af0c9cd9a0/lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+77            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+77-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/joshua/.gradle/caches/transforms-2/files-2.1/3c03e0805bdfd6180afbf0af0c9cd9a0/lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
+78            android:authorities="pt.uac.qa.lifecycle-process"
+78-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/joshua/.gradle/caches/transforms-2/files-2.1/3c03e0805bdfd6180afbf0af0c9cd9a0/lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+79            android:exported="false"
+79-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/joshua/.gradle/caches/transforms-2/files-2.1/3c03e0805bdfd6180afbf0af0c9cd9a0/lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+80            android:multiprocess="true" />
+80-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/joshua/.gradle/caches/transforms-2/files-2.1/3c03e0805bdfd6180afbf0af0c9cd9a0/lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+81    </application>
+82
+83</manifest>

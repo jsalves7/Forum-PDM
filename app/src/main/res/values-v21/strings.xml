@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_search">Pesquisar</string>
+    <string name="action_delete_question">Delete Question</string>
+    <string name="top_bar_edit_question">Editar a sua pergunta</string>
+    <string name="top_bar_list_answers_question">Lista de respostas</string>
+    <string name="top_bar_add_answer">Adicionar Resposta</string>
+</resources>

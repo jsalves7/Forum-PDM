@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Projecto</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_refresh">Refrescar</string>
+
+    <string name="menu_questions">Perguntas</string>
+    <string name="menu_my_questions">Minhas Perguntas</string>
+    <string name="menu_my_answers">Minhas Respostas</string>
+    <string name="menu_sign_out">Logout</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="action_search">Pesquisar</string>
+    <string name="action_delete">Remover</string>
+    <string name="action_accept">Aceitar</string>
+    <string name="negativo">Negativo</string>
+    <string name="positivo">Positivo</string>
+    <string name="mark_correct">Mark Correct</string>
+    <string name="down_vote">Down Vote</string>
+    <string name="upvote">UpVote</string>
+</resources>

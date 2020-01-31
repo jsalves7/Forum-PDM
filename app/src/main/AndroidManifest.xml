@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="pt.uac.qa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".QAApp"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
+        <activity android:name=".ui.ViewAnswerActivity"></activity>
+
+        <service
+            android:name=".services.AnswerService"
+            android:exported="false" />
+
+        <activity android:name=".ui.EditAnswerActivity" />
+        <activity
+            android:name=".ui.ViewQuestionActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <service
+            android:name=".services.QuestionService"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+
+        <meta-data
+            android:name="base_url"
+            android:value="https://forum-daf.fsilva.info" />
+        <meta-data
+            android:name="client_id"
+            android:value="dam-2019-2020" />
+        <meta-data
+            android:name="client_secret"
+            android:value="ec53199f58dcecd9b7a6d930d1166040" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.EditQuestionActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <service
+            android:name=".services.AccessTokenService"
+            android:exported="false" />
+    </application>
+
+</manifest>
